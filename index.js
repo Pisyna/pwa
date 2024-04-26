@@ -33,11 +33,12 @@ messaging
   });
 
 messaging.onMessage(payload => {
-  console.log("Message received. ", payload);
+  console.log("Message received. ", payload);  ////
   const { title, ...options } = payload.notification;
+  message.innerHTML = payload.notification.title;
 });
 
-function subscribeTokenToTopic(token, topic) {
+function subscribeTokenToTopic(token, topic) { //////////////
   fetch("https://iid.googleapis.com/iid/v1/" + token + "/rel/topics/" + topic, {
     method: "POST",
     headers: new Headers({
