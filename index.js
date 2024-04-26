@@ -41,7 +41,7 @@ function subscribeTokenToTopic(token, topic) {
   fetch("https://iid.googleapis.com/iid/v1/" + token + "/rel/topics/" + topic, {
     method: "POST",
     headers: new Headers({
-      Authorization: "key=SERVICE KEY"
+      Authorization: "key=AAAASTKYLcM:APA91bFWmzJlXQCQyL89Z-xI7lxPsoZybXeFUIqOe0tk_AHjTCcHQiwXeRQ-ecfSeQPN0swYiO_sscmckFxsIVm-GB0dRA-Ex4DhZzT1LOMwm6ZL9oMhGQgNNBNJGyjdlRAmrmjgS0j0"
     })
   })
     .then(response => {
